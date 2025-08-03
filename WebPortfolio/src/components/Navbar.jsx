@@ -36,8 +36,8 @@ const Navbar = () => {
       className={`${
         styles.paddingX
       } w-full flex items-center py-5 fixed top-0 z-20 
-        ${scrolled ? "bg-primary" : "bg-transparent"}
-        ${active ? state.theme === `light` ? `text-white` : `text-white`  : "text-secondary"}
+        ${scrolled ? (state.theme === 'light' ? 'bg-white' : 'bg-primary') : 'bg-transparent'}
+        ${scrolled ? (state.theme === 'light' ? 'text-black' : 'text-white') : (state.theme === 'light' ? 'text-white' : 'text-black')}
         `}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
