@@ -24,7 +24,7 @@ const ServiceCard = ( {index, title, icon} ) => {
             }} 
             className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'> 
             <img src={icon} alt={title} className='w-16 h-16 object-contain' />
-            <h3 className={`text-[20px] font-bold text-center ${state.theme === 'light' ? 'text-black' : 'text-white'}`}>{title}</h3>
+            <h3 className={`text-[20px] font-bold text-center text-white`}>{title}</h3>
           </div>
       </motion.div>
     </Tilt>
@@ -37,13 +37,13 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider`}>Introduction</p>
+        <p className={`sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider ${state.theme === 'light' ? `text-gray-800` : `text-[#dfd9ff]`}`}>Introduction</p>
         <h2 className={`font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] ${state.theme === 'light' ? 'text-black' : 'text-white'}`}>Overview</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>   
+        className={`mt-4 text-secondary text-[17px] ${state.theme === 'light' ? `text-gray-800` : `text-[#dfd9ff]`} max-w-3xl leading-[30px]`}>   
         I'm a skilled software developer with experience in TypeScript and
         JavaScript, and expertise in frameworks like React, Node.js, and
         Three.js. I'm a quick learner and collaborate closely with clients to
