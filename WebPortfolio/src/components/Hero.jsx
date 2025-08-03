@@ -4,7 +4,6 @@ import { useTheme } from '../contexts/ThemeContext';
 import {styles} from '../styles';
 import {ComputersCanvas} from './canvas';
 
-
 const Hero = () => {
   const [state] = useTheme();
   
