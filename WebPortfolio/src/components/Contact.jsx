@@ -7,7 +7,12 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+import { useTheme } from "../contexts/ThemeContext";
+
 const Contact = () => {
+  const [state] = useTheme();
+
+
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
