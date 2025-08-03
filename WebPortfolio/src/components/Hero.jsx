@@ -1,10 +1,13 @@
 import {motion } from 'framer-motion';
+import { useTheme } from '../contexts/ThemeContext';
 
 import {styles} from '../styles';
 import {ComputersCanvas} from './canvas';
 
 
 const Hero = () => {
+  const [state] = useTheme();
+  
   return (
     <section className='relative w-full h-screen mx-auto'>
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
@@ -15,8 +18,8 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText}`}>Hi, I'm <span className='text-[#915eff]'>Emman</span></h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <h1 className={`font-black lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2 ${state.theme === 'light' ? 'text-black' : 'text-white'}`}>Hi, I'm <span className='text-[#915eff]'>Emman</span></h1>
+          <p className={`font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-2 ${state.theme === 'light' ? 'text-gray-700' : 'text-[#dfd9ff]'}`}>
             A full stack developer, developing interfaces and web applications. 
               < br className='sm:block hidden'/>
           </p>
