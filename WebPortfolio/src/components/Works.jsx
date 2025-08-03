@@ -6,7 +6,9 @@ import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 
-const ProjectCard = ( {index, name, description, tags, image, source_code_link} ) => {
+import { useTheme } from '../contexts/ThemeContext';
+const ProjectCard = ( {index, name, description, tags, image, source_code_link, theme} ) => {
+  
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt options={{
@@ -30,8 +32,8 @@ const ProjectCard = ( {index, name, description, tags, image, source_code_link} 
         </div>
 
         <div className="mt-5">
-          <h3 className='text-white font-bold text-[24px] pb-3'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+          <h3 className={`text-white font-bold text-[24px] pb-3 ${theme === 'light' ? 'text-gray-300' : 'text-white'} `}>{name}</h3>
+          <p className={`mt-2  text-[14px] ${theme === 'light' ? 'text-gray-200' : 'text-secondary'}`}>{description}</p>
         </div>
 
         <div className='mt-4 flex flex-wrap gap-2'>
@@ -48,18 +50,20 @@ const ProjectCard = ( {index, name, description, tags, image, source_code_link} 
 
 
 const Works = () => {
+  const [state] = useTheme();
+  
   return (
     <>
       <motion.div 
         variants={textVariant()}> {/*variants: make P tags animate*/}
-        <p className={`${styles.sectionSubText}`}>My works</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
+        <p className={`${styles.sectionSubText} ${state.theme === 'light' ? `text-gray-800` : `text-[#dfd9ff]`}`}>My works</p>
+        <h2 className={`${styles.sectionHeadText} ${state.theme === 'light' ? 'text-black-100' : 'text-white'}`}>Projects</h2>
       </motion.div>
 
       <div className='w-full flex'>
         <motion.p 
           variants={fadeIn("", "", 0.1, 1)}   
-          className='mt-3 text-secondary text-[17px] max-3xl leading-[30px]'>
+          className={`mt-3 text-secondary text-[17px] max-3xl leading-[30px] ${state.theme === 'light' ? `text-gray-800` : `text-[#dfd9ff]`}`}>
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
           links to code repositories and live demos in it. It reflects my
@@ -70,7 +74,7 @@ const Works = () => {
 
       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
-        <ProjectCard key={`project-${index}`} index={index} {...project}/>
+        <ProjectCard key={`project-${index}`} index={index} {...project} theme={state.theme}/>
         ))}
       </div>
     </>
