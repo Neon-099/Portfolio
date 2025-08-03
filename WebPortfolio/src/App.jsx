@@ -18,7 +18,6 @@ function App() {
             <Experience />
             <Tech />
             <Works />
-            <Feedbacks />
             {/*DISPLAY STARS HERE*/}
           <div className='relative z-0'>
             <Contact />
