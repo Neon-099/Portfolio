@@ -20,6 +20,8 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import java from "./tech/java.svg";
+import python from "./tech/python.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -28,7 +30,8 @@ import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import habitify from "./habitify.png";
+import brewquest from "./brewquest.png";
 
 export {
   logo,
@@ -46,6 +49,8 @@ export {
   html,
   javascript,
   mongodb,
+  java,
+  python,
   nodejs,
   reactjs,
   redux,
@@ -58,5 +63,6 @@ export {
   tesla,
   carrent,
   jobit,
-  tripguide,
+  habitify,
+  brewquest,
 };

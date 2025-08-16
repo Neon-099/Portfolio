@@ -54,7 +54,7 @@ const Experience = () => {
       <motion.div 
         variants={textVariant()}> {/*variants: make P tags animate*/}
         <p className={`${styles.sectionSubText} ${state.theme === 'light' ? `text-gray-800` : `text-[#dfd9ff]`}`}>What I have done so far</p>
-        <h2 className={`${styles.sectionHeadText} ${state.theme === 'light' ? 'text-black-100' : 'text-white'}`}>Work Experience</h2>
+        <h2 className={`${styles.sectionHeadText} ${state.theme === 'light' ? 'text-black-200' : 'text-white'}`}>Work Experience</h2>
       </motion.div>
 
       <div className='mt-20 flex flex-col'>

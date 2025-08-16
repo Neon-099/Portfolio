@@ -52,7 +52,6 @@ const Navbar = () => {
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className={` ${state.theme === 'light'? 'text-black' : 'text-white'} text-[18px] font-bold cursor-pointer flex `}>
             Emman &nbsp;
-            <span className='md:block hidden'> | JavaScript Mastery</span>
           </p>
         </Link>
           

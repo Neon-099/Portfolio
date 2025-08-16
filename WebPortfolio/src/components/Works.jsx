@@ -57,22 +57,13 @@ const Works = () => {
       <motion.div 
         variants={textVariant()}> {/*variants: make P tags animate*/}
         <p className={`${styles.sectionSubText} ${state.theme === 'light' ? `text-gray-800` : `text-[#dfd9ff]`}`}>My works</p>
-        <h2 className={`${styles.sectionHeadText} ${state.theme === 'light' ? 'text-black-100' : 'text-white'}`}>Projects</h2>
+        <h2 className={`${styles.sectionHeadText} ${state.theme === 'light' ? 'text-gray-900' : 'text-white'}`}>Projects</h2>
       </motion.div>
 
       <div className='w-full flex'>
-        <motion.p 
-          variants={fadeIn("", "", 0.1, 1)}   
-          className={`mt-3 text-secondary text-[17px] max-3xl leading-[30px] ${state.theme === 'light' ? `text-gray-800` : `text-[#dfd9ff]`}`}>
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
-        </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-10 flex flex-wrap gap-7">
         {projects.map((project, index) => (
         <ProjectCard key={`project-${index}`} index={index} {...project} theme={state.theme}/>
         ))}
@@ -81,4 +72,4 @@ const Works = () => {
   )
 }
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "work");

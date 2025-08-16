@@ -1,6 +1,5 @@
 import { BrowserRouter} from 'react-router-dom'
-import { About, Contact, Experience, Feedbacks, Hero,
-  Navbar, Tech, Works, StarsCanvas } from './components';
+import { About, Contact, Navbar, Tech, Works, StarsCanvas } from './components';
 import { useTheme } from './contexts/ThemeContext';
 function App() {
 
@@ -12,10 +11,8 @@ function App() {
       <div className={`relative z-0 min-h-screen ${isDark ? `bg-primary` : `bg-white`} `}>
         <div className={`${isDark ? `bg-hero-pattern bg-cover bg-no-repeat bg-center min-h-screen ` : `bg-white`}`}>
           <Navbar />
-          <Hero />
+          <About />
         </div>
-            <About />
-            <Experience />
             <Tech />
             <Works />
             {/*DISPLAY STARS HERE*/}
