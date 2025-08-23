@@ -211,7 +211,7 @@ const projects = [
   {
     name: "Habitify",
     description:
-     "A web-based platform that allows users to search for breweries, view their ratings, and book tastings directly from the website.",
+     "A habit tracker app that helps you to build healthy habits and achieve your goals. It is a mobile app that allows you to track your habits, set reminders, and monitor your progress. ",
     tags: [
       {
         name: "react js",

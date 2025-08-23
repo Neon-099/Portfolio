@@ -12,8 +12,8 @@ function App() {
         <div className={`${isDark ? `bg-hero-pattern bg-cover bg-no-repeat bg-center min-h-screen ` : `bg-white`}`}>
           <Navbar />
           <About />
-        </div>
-            <Tech />
+          <Tech />
+          </div>
             <Works />
             {/*DISPLAY STARS HERE*/}
           <div className='relative z-0'>

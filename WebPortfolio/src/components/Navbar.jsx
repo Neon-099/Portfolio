@@ -78,15 +78,16 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         <div className='sm:hidden flex items-center gap-4'>
           {/* Mobile Toggle Button - positioned before hamburger menu */}
-          <div className="flex items-center">
+          <div className="flex items-center ">
             <ToggleButton />
           </div>
           
           {/* Hamburger Menu Button */}
           <img
+            className={`${state.theme === 'light' ? 'text-black' : 'text-white'}`}
             src={toggle ? close : menu}
             alt='menu'
-            className='w-[28px] h-[28px] object-contain'
+            className={`w-[28px] h-[28px] object-contain ${state.theme === 'light' ? 'text-black' : 'text-black'}`}
             onClick={() => setToggle(!toggle)}
           />
 
@@ -94,14 +95,17 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            } p-6 ${state.theme === 'dark' ? 'black-gradient' : ' bg-white border border-gray-200 shadow-lg'} absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl
+              `}
           >
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-secondary"
+                    active === nav.title 
+                      ? (state.theme === 'light' ? 'text-black' : 'text-white')
+                      : (state.theme === 'light' ? 'text-gray-600' : 'text-secondary')
                   }`}
                   onClick={() => {
                     setToggle(!toggle);
