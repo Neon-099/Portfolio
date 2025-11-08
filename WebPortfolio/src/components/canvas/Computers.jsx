@@ -19,8 +19,7 @@ const ComputersCanvas = () => {
   //WAY OF CHANGING A MODEL
   useEffect(() => {
     //CHECKING IF IT IS IN A MOBILE VERSION
-    const mediaQuery = window.matchMedia
-      ('max-width: 500px');
+    const mediaQuery = window.matchMedia('(max-width: 500px)');
 
       setIsMobile(mediaQuery.matches);
 

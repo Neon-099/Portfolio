@@ -84,10 +84,9 @@ const Navbar = () => {
           
           {/* Hamburger Menu Button */}
           <img
-            className={`${state.theme === 'light' ? 'text-black' : 'text-white'}`}
             src={toggle ? close : menu}
             alt='menu'
-            className={`w-[28px] h-[28px] object-contain ${state.theme === 'light' ? 'text-black' : 'text-black'}`}
+            className={`w-[28px] h-[28px] object-contain ${state.theme === 'light' ? 'invert' : ''}`}
             onClick={() => setToggle(!toggle)}
           />
 
