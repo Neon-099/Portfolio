@@ -35,7 +35,7 @@ const Hero = () => {
     };
   
     return (
-      <section className="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-16 ">
+      <section className="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-16 rounded-b-[80px] mx-auto ">
         <div className="flex flex-col items-center text-center max-w-4xl w-full rounded-lg">
           {/* Profile Picture and Name */}
           <div className="relative mb-8 flex items-center justify-center">
@@ -81,7 +81,7 @@ const Hero = () => {
           {/* Resume Button */}
           <button
             onClick={handleResumeDownload}
-            className="group flex items-center gap-2 px-8 py-4 bg-black text-white font-semibold rounded-lg hover:bg-gray-900 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            className="group flex items-center gap-2 px-6 py-4 bg-black text-white font-semibold rounded-lg hover:bg-gray-900 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
             <span>Resume</span>
             <ArrowDown className="w-5 h-5"/>
