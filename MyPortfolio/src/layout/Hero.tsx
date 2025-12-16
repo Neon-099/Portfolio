@@ -30,8 +30,13 @@ const Hero = () => {
     }, [texts.length]);
 
     const handleResumeDownload = () => {
-      // Add your resume download logic here
-      // For example: window.open('/resume.pdf', '_blank');
+
+      const link = document.createElement('a');
+      link.href = '/resume.pdf';
+      link.download = 'Resume_Niño_Emman_Natividad.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
     };
   
     return (
