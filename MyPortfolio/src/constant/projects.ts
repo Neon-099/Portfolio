@@ -12,7 +12,7 @@ const projects: Project[] = [
     {
       id: 1,
       title: "Field Ops",
-      image: "/project1.jpg", // Replace with your project image
+      image: "/project1.jpg", 
       technologies: ["/nodejs.png", "/express.svg", "/typescript.png", "/reactjs.png"],
       liveDemo: "https://example.com",
       github: "https://github.com/Neon-099/FieldOps",
@@ -20,9 +20,9 @@ const projects: Project[] = [
     {
       id: 2,
       title: "Pet Shop",
-      image: "/project2.jpg", // Replace with your project image
+      image: "/projects/furryhaven.png", 
       technologies: ["/vite.svg" , "/reactjs.png", "/tailwind.svg", "/php.png"],
-      liveDemo: "https://example.com",
+      liveDemo: "https://furryhaven-git-test-prod-neon-099s-projects.vercel.app/home",
       github: "https://github.com/Neon-099/PetShop",
     },
     {
@@ -36,7 +36,7 @@ const projects: Project[] = [
     {
       id: 4,
       title: "Vaccination.ng",
-      image: "/project4.jpg", // Replace with your project image
+      image: "/project4.jpg",
       technologies: ["/vite.svg", "/typescript.png", "/tailwind.svg"],
       liveDemo: "https://example.com",
       github: "https://github.com/example",
@@ -44,7 +44,7 @@ const projects: Project[] = [
     {
       id: 5,
       title: "NoobNet",
-      image: "/project5.jpg", // Replace with your project image
+      image: "/project5.jpg", 
       technologies: ["/javascript.png", "/css.png", "/html.png"],
       liveDemo: "https://example.com",
       github: "https://github.com/example",
