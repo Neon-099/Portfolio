@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, MessageCircle } from "lucide-react";
+import { Mail} from "lucide-react";
 
 const ContactCTA = () => {
   return (
