@@ -42,7 +42,7 @@ const NavBar = () => {
           <div className="flex items-center justify-between h-20">
             {/* Left: Name */}
             <div className="flex-shrink-0">
-              <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 uppercase tracking-tight">
+              <h1 className=" text-1xl sm:text-3xl font-bold text-gray-800 uppercase tracking-tight">
                 Niño Emman Natividad 
               </h1>
             </div>

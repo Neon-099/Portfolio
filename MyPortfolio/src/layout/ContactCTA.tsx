@@ -54,22 +54,11 @@ const ContactCTA = () => {
         >
           {/* Email button */}
           <a
-            href="mailto:you@example.com"
+            href="mailto:Emmannatividad099@gmail.com"
             className="group inline-flex items-center gap-2 rounded-full bg-black text-white px-7 py-3 text-sm sm:text-base font-semibold shadow-[0_18px_40px_rgba(15,23,42,0.35)] hover:shadow-[0_22px_55px_rgba(15,23,42,0.55)] transition-all duration-200 hover:-translate-y-0.5"
           >
             <Mail className="w-4 h-4 group-hover:scale-110 transition-transform duration-200" />
             <span>Email Me</span>
-          </a>
-
-          {/* WhatsApp (or chat) button */}
-          <a
-            href="https://wa.me/1234567890"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 rounded-full bg-white text-gray-900 px-7 py-3 text-sm sm:text-base font-semibold shadow-[0_10px_30px_rgba(15,23,42,0.08)] hover:shadow-[0_16px_40px_rgba(15,23,42,0.18)] border border-gray-200 hover:border-gray-300 transition-all duration-200 hover:-translate-y-0.5"
-          >
-            <MessageCircle className="w-4 h-4 text-emerald-500 group-hover:scale-110 transition-transform duration-200" />
-            <span>WhatsApp</span>
           </a>
         </motion.div>
       </div>

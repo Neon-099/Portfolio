@@ -52,7 +52,7 @@ const MyProjects = () => {
           {/* Header */}
           <motion.h2
             variants={cardVariants}
-            className="text-1xl sm:text-xl font-bold text-gray-800 text-center mb-16"
+            className="text-1xl sm:text-3xl font-bold text-gray-800 text-center mb-16"
           >
             From concept to creation, turning ideas into powerful web apps we can be proud of.
           </motion.h2>
