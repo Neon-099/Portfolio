@@ -1,7 +1,7 @@
 {
-    "buildCommand": "npm run build",
+    "buildCommand": "npm install && npm run build",
     "outputDirectory": "dist",
-    "installCommand": "npm install vite@5.4.11 ",
+    "installCommand": "npm install --legacy-peer-deps",
     "framework": "vite",
     "rewrites": [
       {
