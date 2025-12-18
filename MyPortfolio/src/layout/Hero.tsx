@@ -67,13 +67,13 @@ const Hero = () => {
             </p>
           </div>
 
-            <div className="mb-3 max-w-2xl">
+            <div className="mb-4 max-w-2xl">
                 <div className="relative  sm:h-24 md:h-28 lg:h-32 overflow-hidden">
                     <p className="text-1xl sm:text-2xl md:text-3xl lg:text-5xl font-bold text-gray-800 leading-tight font-mono tracking-tight">
                         A multidisciplinary
                     </p>
                     <div
-                    className={`text-purple-600 text-1xl sm:text-2xl md:text-3xl lg:text-5xl  leading-tight tracking-tight transition-transform duration-600 ease-in-out ${
+                    className={`text-purple-600 mt-1 text-1xl sm:text-2xl md:text-3xl lg:text-5xl  leading-tight tracking-tight transition-transform duration-600 ease-in-out ${
                         isAnimating ? "-translate-y-full opacity-0" : "translate-y-0 opacity-100"
                     }`}
                     >
@@ -86,10 +86,12 @@ const Hero = () => {
           {/* Resume Button */}
           <button
             onClick={handleResumeDownload}
-            className="group flex items-center gap-2 px-6 py-4 bg-black text-white font-semibold rounded-lg hover:bg-gray-900 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            className="flex items-center gap-2 sm:text-xl text-xs  px-4 py-2 sm:py-5 sm:px-7 bg-black text-white font-semibold 
+            rounded-lg hover:bg-gray-900 transition-all duration-200 shadow-lg hover:shadow-xl transform 
+            hover:-translate-y-1"
           >
             <span>Resume</span>
-            <ArrowDown className="w-5 h-5"/>
+            <ArrowDown className="sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 w-5 h-5"/>
           </button>
         </div>
       </section>

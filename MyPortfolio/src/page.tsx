@@ -15,5 +15,5 @@ createRoot(document.getElementById('root')!).render(
       <MyProjects />
       <ContactCTA />
     </div>
-  </main>,
+  </main>,  
 )
